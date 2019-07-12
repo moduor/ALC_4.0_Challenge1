@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ALC 4 Phase 1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="profile_title">My Profile</string>
+    <string name="about_title">About ALC</string>
+
+    <string name="menu_home">About ALC</string>
+    <string name="menu_gallery">My Profile</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_profile">My Profile</string>
+    <string name="text_welcome">Welcome To ALC 4.0</string>
+    <string name="button_about">About ALC</string>
+    <string name="button_profile_text">My Profile</string>
+    <string name="about_alc_url">https://andela.com/alc/</string>
+    <string name="track_title">Track</string>
+    <string name="track_text">Track: Android</string>
+    <string name="country_text">Country: Kenya</string>
+    <string name="text_my_name">Maurice Oduor</string>
+    <string name="avatar_description">Maurice Oduor photo</string>
+    <string name="text_email">Email: maurice.oduor@gmail.com</string>
+    <string name="text_phone">Phone Number: +254(721)756003</string>
+    <string name="text_slack">Slack Username: @Maurice Oduor</string>
+</resources>
