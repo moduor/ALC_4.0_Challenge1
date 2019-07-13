@@ -19,24 +19,20 @@ import android.widget.ProgressBar;
 public class WebViewActivity extends AppCompatActivity {
 
     private ProgressBar mProgressBar;
-    private WebView mWebView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web_view);
 
-        //WebView myWebView = new WebView(this);
-        //setContentView(myWebView);
-
-        mWebView = findViewById(R.id.view_web);
+        WebView webView = findViewById(R.id.view_web);
         mProgressBar = findViewById(R.id.progressBar);
 
-        mWebView.setWebViewClient(new myWebViewClient());
-        WebSettings webSettings = mWebView.getSettings();
+        webView.setWebViewClient(new myWebViewClient());
+        WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true); // Set for this activity's exercise only
 
-        mWebView.loadUrl("https://andela.com/alc/");
+        webView.loadUrl("https://andela.com/alc/");
     }
 
     public class myWebViewClient extends WebViewClient{
