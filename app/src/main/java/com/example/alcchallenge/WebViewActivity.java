@@ -34,7 +34,7 @@ public class WebViewActivity extends AppCompatActivity {
 
         mWebView.setWebViewClient(new myWebViewClient());
         WebSettings webSettings = mWebView.getSettings();
-        webSettings.setJavaScriptEnabled(true);
+        webSettings.setJavaScriptEnabled(true); // Set for this activity's exercise only
 
         mWebView.loadUrl("https://andela.com/alc/");
     }
@@ -59,7 +59,6 @@ public class WebViewActivity extends AppCompatActivity {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String request) {
             mProgressBar.setVisibility(View.VISIBLE);
-            //view.loadUrl(request);
 
             if(request.contains("andela.com")) return false;
 
