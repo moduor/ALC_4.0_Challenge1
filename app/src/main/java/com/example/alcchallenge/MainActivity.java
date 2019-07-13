@@ -3,6 +3,7 @@ package com.example.alcchallenge;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 
@@ -85,9 +86,8 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
@@ -119,8 +119,6 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent(this, ProfileActivity.class));
         }else if(buttonId == R.id.button_about){
             startActivity(new Intent(this, WebViewActivity.class));
-        }else {
-
         }
     }
 }
